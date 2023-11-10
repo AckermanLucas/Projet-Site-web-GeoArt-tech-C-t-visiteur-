@@ -1,0 +1,45 @@
+.card-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    transform: translateX(0);
+    opacity: 0.7;
+  }
+  
+  .card.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #0056b3;
+  }
+  

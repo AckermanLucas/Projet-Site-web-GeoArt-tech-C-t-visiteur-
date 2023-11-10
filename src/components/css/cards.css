@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.containers{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.cartes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+.carte{
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    width: 100%;
+    background: #02b653;
+    border-radius: 24px;
+    padding: 80px;
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 10px #00000014;
+    transition: .3s;
+    border: 3px solid transparent;
+}
+.carte:hover{
+    border-color: #fff; 
+}
+@media(max-width:969px){
+section{
+    padding: 20px 0px;
+}
+
+.carte{
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+}
+@media(max-width:600px){
+    .carte{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    }
