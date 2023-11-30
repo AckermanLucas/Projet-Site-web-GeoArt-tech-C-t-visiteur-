@@ -1,34 +1,37 @@
 import { React, ReactDOM } from 'react';
 import Navbar from './components/Navbar';
-import Slider from './components/Slider';
-import Pres from './components/Pres';
-import Actual from './components/Actual';
 import Footer from './components/Footer';
-import Offre from './components/Offre';
-import Partenaires from './components/Partenaires';
-import News from './components/News';
-import Overlay from './components/Overlay';
+import MyRouter from './router/index.js';
+import Acceuil from './pages/Acceuil';
+import { Component } from 'react';
 
+class App extends Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			routeKey:1
+		};
+	}
 
-import {BrowserRouter as Router, Switch, Route} from 
-'react-router-dom';
-
-function App() {
-  return (
-		<div className='App'>
-				<Navbar/>
-				<Slider/>
-				<Pres/>
-				<Actual/>
-				<Offre/>
-				<Overlay/>
-				<News/>
-				<Footer/>
-		
+	changeRoute(){
+		this.setState(prevState =>({
+			routeKey: prevState.routeKey + 1
+		}));
+	}
+		render() {
+	return (
+		<div className='App' key={this.state.routeKey}>
+		  <Navbar/>
+	
+		  <MyRouter/>
+		  <Footer />
+		  
 		</div>
-  );
-}
+	);
+		}
+  };
+  export default App;
 
-export default App;
+
 
 

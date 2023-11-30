@@ -40,7 +40,6 @@ function Actualite() {
 									</div>
 								</div>
 							
-								<a href="#" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
 							</div>
 						</div>
 			

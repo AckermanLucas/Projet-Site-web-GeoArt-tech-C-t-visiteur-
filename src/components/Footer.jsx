@@ -7,22 +7,26 @@ function Footer() {
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-footer">
-                        <h2>A propos de nous</h2>
-                        <p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
-                    </div>
-                </div>
+            <div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Réseaux sociaux</h2>
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-whatsapp"></i></a></li>
+                                    <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+								</ul>
+							
+							</div>
+						</div>
                 <div class="col-lg-8 col-md-10 col-12">
                     <div class="single-footer f-link">
-                        <h2>Lien</h2>
+                        <h2>Liens externes</h2>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-12">
                                 <ul>
                                     <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+261 38 58 764 94</a></li>
                                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Info_services@geoar-tech.com</a></li>
-                                    <li><a href="#"><i class="fa icofont-paper-plane" aria-hidden="true"></i>www.geoar-tech.com</a></li>
-                                    <li><a href="#"><i class="fa icofont-facebook" aria-hidden="true"></i>Géoar'tech</a></li>
+                                    <li><a href="#"><i class="icofont-google-map" aria-hidden="true"></i>Fianarantsoa</a></li>
                                 </ul>
                             
                             </div>

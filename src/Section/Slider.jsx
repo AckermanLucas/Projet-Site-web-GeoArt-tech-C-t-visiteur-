@@ -1,5 +1,6 @@
 import React from 'react'
-import map from './map.jpg';
+import map from '../images/map.jpg';
+import { NavLink } from 'react-router-dom';
 
 const styles = {
 	container: {
@@ -10,7 +11,7 @@ const styles = {
 
 function Slider() {
   return (
-    <section class="slider">
+    <section class="slider" id='slider'>
 			<div class="hero-slider">
 			
 				<div class="single-slider" style={styles.container}>
@@ -39,7 +40,7 @@ function Slider() {
 									<p>Nous sommes ravis de vous annoncer le lancement officiel de notre entreprise GéoAr'tech</p>
 									<div class="button">
 										<a href="#" class="btn">Voir plus</a>
-										<a href="#" class="btn primary">Nous contacter</a>
+									<a href="#" class="btn primary">Nous contacter</a>
 									</div>
 								</div>
 							</div>

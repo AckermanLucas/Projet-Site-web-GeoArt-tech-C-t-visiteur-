@@ -1,12 +1,23 @@
-import { Link } from 'react-router-dom';
 import React, {useState} from 'react';
-import geo from './geo.jpg';
-import { Link as ScrollLink  } from 'react-scroll';
-
+import geo from '../images/geo.jpg';
+import { scroller } from 'react-scroll' ;
+import { BrowserRouter, NavLink } from 'react-router-dom';
+//import MyRouter from './router/index.js';
 
 function Navbar() {
+  const handleClick = (to) => {
+
+    // Utiliser react-scroll pour faire défiler vers l'élément cible
+    scroller.scrollTo(to, {
+      spy:true,
+      smooth:true,
+      offset:-70,
+      duration:800,
+    });
+  };
+  
+
   return (
-    <>
       <header class="header" >
         <div class="header-inner">
           <div class="container">
@@ -14,7 +25,7 @@ function Navbar() {
               <div class="row">
                 <div class="col-lg-3 col-md-3 col-12">
                   <div class="logo">
-                    <a href=""><img src={geo} alt=""/></a>
+                    <a href=""><img src={geo}/></a>
                   </div> 
                   <div class="mobile-nav"></div>
                 </div>
@@ -23,62 +34,43 @@ function Navbar() {
                   <div class="main-menu">
                     <nav class="navigation">
                       <ul class="nav menu">
+              
                         <li>
-                        <ScrollLink
-                              activeClass="active"
-                              to="section1"
-                              spy={true}
-                              smooth={true}
-                              offset={-70}
-                              duration={500}
-                            >
-                              Acceuil
-                            </ScrollLink>
-                            <i class="house"></i>
+                        <li><a href="/">Accueil</a></li>
                         </li>
-                                  
+
                         <li>
-                        <ScrollLink
-                              className="nav li a"
-                              activeClass="active"
-                              to="presentation"
-                              spy={true}
-                              smooth={true}
-                              offset={-70}
-                              duration={800}
-                            >
-                              Qui somme nous ?
-                            </ScrollLink>
+                        <NavLink to="/Actualité"  activeclass="active" onClick={() => handleClick("actualite")} 
+                        style={({isActive})=>{return {color:isActive?'#2C2D3F':''}}} >Actualités</NavLink>
+                        </li>
+
+                        <li><a>Société <i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><NavLink to="/Presentation" onClick={() => handleClick("presentation")}
+                          style={({isActive})=>{return {color:isActive?'#02b653':''}}}
+                          >Qui somme nous ?</NavLink></li>
+                          <li>
+                        <NavLink to="/Equipe" onClick={() => handleClick("equipe")}
+                        style={({isActive})=>{return {color:isActive?'#02b653':''}}}
+                        >Notre équipes</NavLink>   
                         </li>
                         <li>
-                        <ScrollLink
-                              className="nav li a"
-                              activeClass="active"
-                              to="actualite"
-                              spy={true}
-                              smooth={true}
-                              offset={-70}
-                              duration={800}
-                            >
-                             Actualité
-                            </ScrollLink>
+                        <NavLink to="/Partenaires" onClick={() => handleClick("")}
+                        style={({isActive})=>{return {color:isActive?'#02b653':''}}}
+                        >Partenaires</NavLink> 
+                        </li>
+												</ul>
+											</li>
+                        <li>
+                        <NavLink to="/Offre" onClick={() => handleClick("domaine")}>Offre</NavLink>  
+                        </li>    
+                        <li>
+                        <NavLink to="/Portfolios" onClick={() => handleClick("portfolio")}>Portfolios</NavLink>   
                         </li>
                         <li>
-                        <ScrollLink
-                              className="nav li a"
-                              activeClass="active"
-                              to="offre"
-                              spy={true}
-                              smooth={true}
-                              offset={-70}
-                              duration={800}
-                            >
-                             Offres
-                            </ScrollLink>
+                        <NavLink to="/Contact"  onClick={() => this.changeRoute()} 
+                        style={({isActive})=>{return {color:isActive?'#2C2D3F':''}}}>Contact</NavLink>
                         </li>
-                        <li><a href="#">Partenaire </a></li>
-                        <li><a href="#">Nos équipes </a></li>
-                        <li><a href="#">Contact </a></li>
                       </ul>
                     </nav>
                   </div>
@@ -88,7 +80,6 @@ function Navbar() {
           </div>
         </div>
       </header>
-    </>
   )
 }
 
