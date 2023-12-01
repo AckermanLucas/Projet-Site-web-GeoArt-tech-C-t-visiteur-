@@ -501,12 +501,12 @@ Preloader Area CSS
 	top:0;
 	height:100%;
 	width:100%;
-	background:#060218;
+	background:#134731;
 	opacity:0.8;
 }
 /* Bread Crumbs */
 .breadcrumbs {
-	background-image: url('');
+	background-image: url('../../images/fianara.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -552,7 +552,7 @@ Preloader Area CSS
 	padding:0;
 }
 .breadcrumbs ul li a:hover{
-	color:#2C2D3F;
+	color:#0b9e30;
 }
 .breadcrumbs ul li.active a {
 	color: #fff;

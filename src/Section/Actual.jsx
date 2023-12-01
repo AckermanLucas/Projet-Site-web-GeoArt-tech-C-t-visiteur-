@@ -51,7 +51,7 @@ const color = {
 					<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-news" key={item.id}>
 					<div class="news-head"> 
-						<img src={informatiques} alt=""/>
+					<img src={"http://localhost:8000/storage/"+item.photosActualite}/>
 					</div>
 					<div class="news-body">
 						<div class="news-content">

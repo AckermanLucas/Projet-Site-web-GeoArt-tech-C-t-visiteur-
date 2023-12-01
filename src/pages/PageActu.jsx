@@ -60,7 +60,7 @@ function PageActu(){
                     <div class="col-12">
                         <div class="single-main" key={donnee.id}>
                             <div class="news-head">
-                                <img src={informatiques} alt="#"/>
+                            <img src={"http://localhost:8000/storage/"+donnee.photosActualite}/>
                             </div>
                             <div class="meta">
 										<div class="meta-left">
@@ -87,27 +87,7 @@ function PageActu(){
            
             </div>
 
-            <div class="col-lg-4 col-12">
-						<div class="main-sidebar">
-							<div class="single-widget recent-post" >
-								<h3 class="title">A la une</h3>
-						
-								<div class="single-post">
-									<div class="image">
-										<img src={informatiques}alt="#"/>
-									</div>
-									<div class="content">
-										<h5><a href="#"></a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i></li>
-			
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-                   
+
         </div>
     </div>
 </section>

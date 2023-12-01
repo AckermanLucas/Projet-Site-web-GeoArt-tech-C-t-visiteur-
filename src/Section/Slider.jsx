@@ -1,5 +1,6 @@
 import React from 'react'
 import map from '../images/map.jpg';
+import fianara from '../images/fianara.jpg';
 import { NavLink } from 'react-router-dom';
 
 const styles = {

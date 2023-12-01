@@ -1,0 +1,53 @@
+
+  
+  ----------------------------------
+
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+  
+  
+ .cardi {
+    border: 1px solid #fff;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    color: #06681e;
+    cursor: pointer;
+  }
+  .cardi-top h1 {
+    font-size: 0.9rem;
+    margin: 20px;
+  }
+  
+  .cardi-top > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: black;
+  }
+  
+  .cardi-bottom {
+    margin: 10px 20px;
+  }
+  
+  .category {
+    position: relative;
+  }
+  .category::before {
+    content: '';
+    background: rgb(255, 61, 61);
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    height: 2px;
+  }
+  
+  
+  
+  

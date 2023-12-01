@@ -1,103 +1,4 @@
 
-/*import React from 'react'
-import informatiques from './informatiques.jpg';
-
-
-function Offre() {
-  return (
-<section class="services section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2 style={colort}>Notre offre</h2>
-							<p>Consultez les offres de GéoAr'Tech</p>
-						</div>
-					</div>
-				</div>				
-			<div class="row">
-					<div class="col-lg-4 col-md-6 col-12" >
-						<div class="single-service">
-							<i class=""></i>
-							<h4><a href="service-details.html">Création de site web</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="single-service">
-							<i class="icofont-paper-plane"></i>
-							<h4><a href="service-details.html">Développement d'application(web, mobile, bureau)</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="single-service">
-							<i class="icofont-paper-plane"></i>
-							<h4><a href="service-details.html">Collecte de données</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-					</div>                                                                                                                                                                                                                                                        
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="single-service">
-							<i class="icofont-paper-plane"></i>
-							<h4><a href="service-details.html">Traitement et analyse de données(spatiale ou non, satellitaires)</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="single-service">
-							<i class="icofont-paper-plane"></i>
-							<h4><a href="service-details.html">Système d'information géographique(cartographie numérique, base de données spatiales, analyse spatiales)</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="single-service">
-							<i class="icofont-paper-plane"></i>
-							<h4><a href="service-details.html">Creation d'application web mapping</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="single-service">
-							<i class="icofont-"></i>
-							<h4><a href="service-details.html">Création d'application de Géolocalisation</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="single-service">
-							<i class="icofont-paper-plane"></i>
-							<h4><a href="service-details.html">Traitement automatique de données (spatiales ou non)</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-				
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-					
-						<div class="single-service">
-							<i class="icofont-paper-plane"></i>
-							<h4><a href="service-details.html">Business Intelligence (production de ta bleaux de bord, cartes thématiques)</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-						
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="single-service">
-							<i class="icofont-paper-plane"></i>
-							<h4><a href="service-details.html">Data science</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
-						</div>
-					
-					</div>
-				</div>
-			</div>
-		</section>
-  )
-}
-
-export default Offre*/
-
 import React from 'react'
 import geo from '../images/geo.jpg';
 import graph from '../images/graph.gif';
@@ -117,7 +18,7 @@ function Offre() {
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Découvrez nos domaines d'expertise</h2>
+							<h2>Offre</h2>
 							<img src={offre}/>
 							<p>Domaines d'expertise de GéoAr'Tech</p>
 						</div>

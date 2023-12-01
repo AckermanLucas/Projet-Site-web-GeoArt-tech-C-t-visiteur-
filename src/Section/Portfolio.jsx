@@ -1,7 +1,47 @@
 import React ,{ useEffect, useState } from 'react';
+import { BrowserRouter as Router, Link, Route, Routes, useRoutes, useParams } from 'react-router-dom';
 import informatiques from '../images/informatiques.jpg';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+//import '../components/slick.css';
+
+
 import axios from 'axios';
-import { BrowserRouter as Router, Link, Route, Routes, useRoutes, useParams, NavLink } from 'react-router-dom';
+const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
 function Portfolio() {
 	const [portfolio, setportfolio] = useState([]);
@@ -24,40 +64,41 @@ function Portfolio() {
 		}, []); // Le tableau vide comme deuxième argument signifie que useEffect s'exécute une seule fois après le montage
 
   return (
-    <section class="portfolio section" id='portfolio'>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Portfolios</h2>
-							<p>Quelques projet</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="container-fluid">
-			
-				<div class="row">
-			
-					<div class="col-lg-12 col-12">
-					
-						<div class="owl-carousel portfolio-slider" >
-				
-							<div class="single-pf">
+   
+    <section class="portfolio section" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h2>Portfolios</h2>
+            <p>Quelques projets</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+       <div class="col-lg-12 col-12">
+       {portfolio.map(item => (
+						<div class="owl-carousel portfolio-slider" key={item.id}>
+
+            
+							<div class="single-pf" >
 								<img src={informatiques} alt="#"/>
-								<Link  class="btn" onClick={() => this.changeRoute()}>Détails</Link>
+                <Link  class="btn" onClick={() => this.changeRoute()}>Détails</Link>
 							</div>
-						
+                
 						</div>
-						
+           ))}
 					</div>
-				
-				</div>
-				
-			</div>
-			
-		</section>
+     
+
+
+      </div>
+    </div>
+  </section>
+
+
   )
 }
 

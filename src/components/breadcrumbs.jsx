@@ -11,7 +11,7 @@ function breadcrumbs() {
                     <ul class="bread-list">
                         <li><a href="index.html">Acceuil</a></li>
                         <li><i class="icofont-simple-right"></i></li>
-                        <li class="active">Blog Single</li>
+                        <li class="active">Actualité</li>
                     </ul>
                 </div>
             </div>

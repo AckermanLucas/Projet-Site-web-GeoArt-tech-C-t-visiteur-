@@ -6,13 +6,14 @@ import { BrowserRouter, NavLink } from 'react-router-dom';
 
 function Navbar() {
   const handleClick = (to) => {
-
+    
     // Utiliser react-scroll pour faire défiler vers l'élément cible
     scroller.scrollTo(to, {
       spy:true,
       smooth:true,
       offset:-70,
       duration:800,
+     
     });
   };
   
@@ -62,10 +63,12 @@ function Navbar() {
 												</ul>
 											</li>
                         <li>
-                        <NavLink to="/Offre" onClick={() => handleClick("domaine")}>Offre</NavLink>  
+                        <NavLink to="/Offre" onClick={() => handleClick("domaine")}
+                        >Offre</NavLink>  
                         </li>    
                         <li>
-                        <NavLink to="/Portfolios" onClick={() => handleClick("portfolio")}>Portfolios</NavLink>   
+                        <NavLink to="/Portfolios" onClick={() => handleClick("portfolio")}
+                        >Portfolios</NavLink>   
                         </li>
                         <li>
                         <NavLink to="/Contact"  onClick={() => this.changeRoute()} 

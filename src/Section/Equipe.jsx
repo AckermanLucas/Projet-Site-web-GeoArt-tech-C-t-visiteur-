@@ -1,6 +1,6 @@
 import React ,{ useEffect, useState } from 'react';
 import { BrowserRouter as Router, Link, Route, Routes, useRoutes, useParams } from 'react-router-dom';
-import informatiques from '../images/informatiques.jpg';
+import informatiques from '../images/lucas.jpg';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -76,72 +76,24 @@ function Equipe() {
         </div>
         <div class="row">
         <div class="col-lg-12 col-md-6 col-12">
-        <div className="App">
+       
       <Slider {...settings}>
-      
-          <div className="card">
-            <div className="card-top">
-              <img
-                src={informatiques}/>
-              <h5></h5>
+      {equipe.map(item => (
+          <div className="card" key={item.id}>
+            <div className="image">
+              <img src={"http://localhost:8000/storage/"+item.photoPersonnel}/>
             </div>
-            <div className="card-bottom">
-              <h5> RAZAFINDRAHOLY Mampianina Lucas Princi</h5>
-              <span className="category">Proffesseur</span>
-            </div>
+            <h5>{item.nom}  {item.prenoms}</h5>
+                <p>{item.poste}</p>
           </div>
-          <div className="card">
-            <div className="card-top">
-              <img
-                src={informatiques}/>
-              <h5></h5>
-            </div>
-            <div className="card-bottom">
-              <h5> RAZAFINDRAHOLY Mampianina Lucas Princi</h5>
-              <span className="category">Proffesseur</span>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-top">
-              <img
-                src={informatiques}/>
-              <h5></h5>
-            </div>
-            <div className="card-bottom">
-              <h5> RAZAFINDRAHOLY Mampianina Lucas Princi</h5>
-              <span className="category">Proffesseur</span>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-top">
-              <img
-                src={informatiques}/>
-              <h5></h5>
-            </div>
-            <div className="card-bottom">
-              <h5> RAZAFINDRAHOLY Mampianina Lucas Princi</h5>
-              <span className="category">Proffesseur</span>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-top">
-              <img
-                src={informatiques}/>
-              <h5></h5>
-            </div>
-            <div className="card-bottom">
-              <h5> RAZAFINDRAHOLY Mampianina Lucas Princi</h5>
-              <span className="category">Proffesseur</span>
-            </div>
-          </div>
-        
+      ))}
       </Slider>
     </div>
 
         
       </div>
   </div>
-  </div>
+  
 </section>
   )
 }

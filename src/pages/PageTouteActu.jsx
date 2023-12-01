@@ -46,8 +46,6 @@ const color = {
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section-title">
-					<h2>actualités</h2>
-					<p>Consultez les dernières actualités sur GéoAr'Tech</p>
 				</div>
 			</div>
 		</div>
@@ -56,12 +54,12 @@ const color = {
 					<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-news" key={item.id}>
 					<div class="news-head"> 
-						<img src={informatiques} alt=""/>
+					<img src={"http://localhost:8000/storage/"+item.photosActualite}/>
 					</div>
 					<div class="news-body">
 						<div class="news-content">
 							<div class="date"><i class="fa fa-calendar" aria-hidden="true"></i>{format(new Date(item.dateEvenement), '  dd MMMM yyyy', { locale: fr })}</div>
-					  <h2><a href="blog-single.html">{item.titre}</a></h2>
+					  <h2><a>{item.titre}</a></h2>
 					  <p class="text">{item.descriptionActualite}</p>
 							<Link to={`/Actualite/${item.id}`} class="btn" onClick={() => this.changeRoute()}>Détails</Link>
 						</div>
