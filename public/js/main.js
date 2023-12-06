@@ -93,7 +93,8 @@
 		/*===============================
 			Portfolio Slider JS
 		=================================*/ 
-		$('.portfolio-slider').owlCarousel({
+		/*$('.portfolio-slider').owlCarousel({
+			items: 1, // Nombre d'éléments à afficher à la fois
 			autoplay:true,
 			autoplayTimeout:4000,
 			margin:15,
@@ -101,6 +102,7 @@
 			autoplayHoverPause:true,
 			loop:true,
 			nav:true,
+			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 			dots:false,
 			responsive:{
 				300: {
@@ -116,7 +118,7 @@
 					items:4,
 				},
 			}
-		});
+		});*/
 		
 		/*=====================================
 			Counter Up JS
@@ -132,13 +134,14 @@
 		$('.clients-slider').owlCarousel({
 			items:5,
 			autoplay:true,
-			autoplayTimeout:3500,
+			autoplayTimeout:1000,
 			margin:15,
-			smartSpeed: 400,
+			smartSpeed: 1000,
 			autoplayHoverPause:true,
 			loop:true,
-			nav:false,
+			nav:true,
 			dots:false,
+			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 			responsive:{
 				300: {
 					items:1,
@@ -158,7 +161,7 @@
 		/*====================================
 			Single Portfolio Slider JS
 		======================================*/ 
-		$('.pf-details-slider').owlCarousel({
+		$('.portfolio-details-slider').owlCarousel({
 			items:1,
 			autoplay:false,
 			autoplayTimeout:5000,

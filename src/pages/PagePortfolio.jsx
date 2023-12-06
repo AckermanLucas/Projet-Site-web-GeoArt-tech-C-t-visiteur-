@@ -29,15 +29,15 @@ function PagePortfolio() {
 <div>   
     <Breadcrumbsport/>
 
-<section class="pf-details section">
+<section class="portfolio-details section">
 			<div class="container">
 				<div class="row">
                 {portfolio ? (
 					<div class="col-12">
 						<div class="inner-content">
 							<div class="image-slider">
-								<div class="pf-details-slider">
-									<img src={informatiques} alt="#"/>	
+								<div class="portfolio-details-slider">
+								<img src={`http://localhost:8000/storage/${donnee.photosPortfolio}`} alt={`Portfolio ${donnee.id}`} />
 								</div>
 							</div>
 							<div class="date">

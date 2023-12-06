@@ -4,23 +4,30 @@ import informatiques from '../images/informatiques.jpg';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+
 //import '../components/slick.css';
 
 
 import axios from 'axios';
 const settings = {
+    loop:true,
+		autoplay:true,
+		smartSpeed: 500,
+		autoplayTimeout:3500,
     dots: true,
     infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    nav:true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     initialSlide: 0,
+    navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
           dots: true,
         },
@@ -64,39 +71,54 @@ function Portfolio() {
 		}, []); // Le tableau vide comme deuxième argument signifie que useEffect s'exécute une seule fois après le montage
 
   return (
-   
-    <section class="portfolio section" >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title">
-            <h2>Portfolios</h2>
-            <p>Quelques projets</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-       <div class="col-lg-12 col-12">
-       {portfolio.map(item => (
-						<div class="owl-carousel portfolio-slider" key={item.id}>
-
-            
-							<div class="single-pf" >
-								<img src={informatiques} alt="#"/>
-                <Link  class="btn" onClick={() => this.changeRoute()}>Détails</Link>
-							</div>
-                
+  
+<section class="portfolio section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Portfolios</h2>
+							<p>Projet réalisés</p>
 						</div>
-           ))}
 					</div>
-     
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+          <Slider {...settings}>
+          {portfolio.map(item => (
+						<div class="owl-carousel portfolio-slider">
+            
+          <div class="single-pf" key={item.id}>
+            <img src={`http://localhost:8000/storage/${item.photosPortfolio}`} alt={`Portfolio ${item.id}`} />
+            <Link to={`/Portfolio/${item.id}`} class="btn" onClick={() => this.changeRoute()}>
+              Détails
+            </Link>
+          </div>
+						</div>
+             ))}
+            </Slider>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
-      </div>
-    </div>
-  </section>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
 
 
   )

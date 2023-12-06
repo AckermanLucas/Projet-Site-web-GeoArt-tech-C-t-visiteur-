@@ -11,6 +11,16 @@ const color = {
   };
 
 	function Actual() {
+		useEffect(() => {
+			const sectionId = window.location.hash.substring(1);
+			if (sectionId) {
+			  const targetElement = document.getElementById(sectionId);
+			  if (targetElement) {
+				targetElement.scrollIntoView();
+			  }
+			}
+		  }, []);
+		  
 		const [actu, setactu] = useState([]);
 	
 		//const { id } = useParams();
@@ -36,7 +46,7 @@ const color = {
 		const reverseactu = sortedActu.reverse();
   return (
 
-	<section class="blog section" id="actualite">
+	<section class="actualite section" id="actualite">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -48,7 +58,7 @@ const color = {
 		</div>
 		<div class="row">
 			{reverseactu.slice(0, 3).map(item => (
-					<div class="col-lg-4 col-md-6 col-12">
+					<div class="col-lg-4 col-md-6 col-16">
 					<div class="single-news" key={item.id}>
 					<div class="news-head"> 
 					<img src={"http://localhost:8000/storage/"+item.photosActualite}/>
@@ -56,19 +66,20 @@ const color = {
 					<div class="news-body">
 						<div class="news-content">
 							<div class="date"><i class="fa fa-calendar" aria-hidden="true"></i>{format(new Date(item.dateEvenement), '  dd MMMM yyyy', { locale: fr })}</div>
-					  <h2><a href="blog-single.html">{item.titre}</a></h2>
+					  <h2><a>{item.titre}</a></h2>
 					  <p class="text">{item.descriptionActualite}</p>
-							<Link to={`/Actualite/${item.id}`} class="btn" onClick={() => this.changeRoute()}>Détails</Link>
+							<Link to={`/Actualite/${item.id}`} class="btn" onClick={() => this.changeRoute()}>
+								Détails</Link>
 						</div>
 					</div>
 				  </div>	
 				  
 		  </div>	
 			))}
-			  
-	  </div>
-	  <Link to="/Toutes_Actualité"  class="btn-actu" onClick={() => this.changeRoute()}>
+			  <Link to="/Toutes_Actualité"  class="btn-actu" onClick={() => this.changeRoute()}>
 	  Toutes les actualités <i class="fa fa-arrow-right" aria-hidden="true"></i></Link>
+	  </div>
+	  
   </div>
 </section>
 

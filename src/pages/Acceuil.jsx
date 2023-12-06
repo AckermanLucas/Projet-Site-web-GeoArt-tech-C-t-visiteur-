@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{ useEffect } from  'react'
+import { useParams } from 'react-router-dom';
 import Slider from '../Section/Slider';
 import Actual from '../Section/Actual';
 import Pres from '../Section/Pres';
@@ -10,18 +11,30 @@ import Equipe from '../Section/Equipe';
 import Contacter from '../Section/Contacter';
 import Portfolio from '../Section/Portfolio';
 
-function Acceuil() {
+const Acceuil = () => {
+
+  const { sectionId } = useParams();
+
+  useEffect(() => {
+    if (sectionId) {
+      const targetElement = document.getElementById(sectionId);
+      if (targetElement) {
+        targetElement.handleClick();
+      }
+    }
+  }, []);
+  
+
   return (
-    
     <div>
         <Slider />
         <Actual />
         <Pres />
         <Offre />
-        <Partenaires />
         <Portfolio />
         <Equipe />
         <Overlay />
+        <Partenaires />
         <News />
   
   </div>

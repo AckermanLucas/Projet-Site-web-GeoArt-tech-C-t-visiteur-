@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react';
 import map from '../images/map.jpg';
 import fianara from '../images/fianara.jpg';
-import { NavLink } from 'react-router-dom';
+
+
 
 const styles = {
 	container: {
@@ -9,12 +10,14 @@ const styles = {
 	  // Autres styles
 	},
   };
-
+ 
 function Slider() {
+	
+
+
   return (
     <section class="slider" id='slider'>
 			<div class="hero-slider">
-			
 				<div class="single-slider" style={styles.container}>
 					<div class="container">
 						<div class="row">
@@ -31,7 +34,6 @@ function Slider() {
 						</div>
 					</div>
 				</div>
-		
 				<div class="single-slider" style={styles.container}>
 					<div class="container">
 						<div class="row">
@@ -68,7 +70,7 @@ function Slider() {
 			
 			</div>
 		</section>
-  )
+  ) 
 }
 
 export default Slider

@@ -4,28 +4,61 @@
 .slick-list {
   margin: 0 -10px;
 }
+.slick-slider {
+  position: relative;
+}
 
+.slick-prev,
+.slick-next {
+
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  color: #fff;
+  background-color: #02b653;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2C2D3F;
+  }
+
+  &.slick-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background-color: #2C2D3F;
+  }
+}
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
 .card {
-  padding: 30px 75px;
+  padding: 30px 30px 30px 30px;
   flex-direction: column;
   border: 1px solid #fff;
-  background: #fff;
+  background: #f9f9f9;
   border-radius: 20px;
   align-items: center;
   justify-content: flex-start;
   display: flex;
   position: relative;
   max-width: 400px;
-
-
-@media (min-width: 768px) {
-  max-width: 400px;
-}
-
+  height: 400px;
 }
 .card-top h1 {
   font-size: 0.9rem;
-  margin: 20px;
+  margin: 10px;
 }
 .card .image {
   width: 200px;
@@ -47,13 +80,48 @@
 }
 .card h5 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1.0rem;
-  margin: 20px;
+  margin: 10px;
+  font-weight: 700;
 }
 .card p {
   text-align: center;
+  margin-bottom: 5px;
+  font-weight: 200;
 }
+@media only screen and (max-width: 768px) {
+  .card {
+    border-radius: 0; /* Supprimez la bordure arrondie pour les écrans plus petits si nécessaire */
+    margin: 15px 0;
+  }
+
+
+
+}
+
+.card .social-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px; /* Ajustez la marge selon vos besoins */
+}
+
+.card .social-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card .social-button i {
+  font-size: 24px; /* Ajustez la taille de l'icône selon vos besoins */
+}
+
+.card .social-button:hover {
+  transform: scale(1.2); /* Ajustez le facteur d'échelle selon vos préférences */
+}
+
 
 .category {
   position: relative;

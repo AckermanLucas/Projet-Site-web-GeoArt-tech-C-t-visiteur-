@@ -10,7 +10,7 @@ Version:	1.1
 # Normalize
 --------------------------------------------------------------*/
 html {
-	 font-family: 'Poppins', sans-serif;
+	 font-family: 'Montserrat', sans-serif;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -171,14 +171,15 @@ select,
 optgroup,
 textarea {
 	color: #424646;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-weight:400;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 24px;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	margin: 0;
+	line-height: 24px;
 }
 p {
 	color:#757575;
@@ -202,7 +203,7 @@ address {
 }
 pre {
 	background: #eee;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -212,7 +213,7 @@ pre {
 	padding: 1.6em;
 }
 code, kbd, tt, var {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -470,7 +471,7 @@ Preloader Area CSS
 	transform: scaleX(1);
 }
 .section{
-	padding:100px 0;
+	padding:50px 0;
 }
 .section-title{
 	text-align: center;
@@ -488,7 +489,7 @@ Preloader Area CSS
 .section-title p{
 	font-size:15px;
 	color:#888;
-	margin-top:15px;
+	margin-top:10px;
 }
 /* Overlay */
 .overlay{
@@ -558,44 +559,7 @@ Preloader Area CSS
 	color: #fff;
 	display: inline-block;
 }
-/* Pagination CSS */
-.pagination {
-	text-align: left;
-	margin: 50px 0 0 0;
-	display:block;
-}
-.pagination.center {
-	text-align: center;
-}
-.pagination .pagination-list li {
-	margin-right: 5px;
-	display: inline-block;
-}
-.pagination .pagination-list li:last-child{
-	margin-right:0px;
-}
-.pagination .pagination-list li a {
-	background: #F6F7FB;
-	color: #666;
-	padding: 6px 18px;
-	font-weight: 400;
-	border: 1px solid #e1e1e1;
-	font-size: 16px;
-	border-radius: 4px;
-}
-.pagination .pagination-list li.active a,.pagination .pagination-list li:hover a{
-	background: #02b653;
-	color: #fff;
-	border-color: transparent;
-}
-.pagination .pagination-list li a i{
-	font-size:15px;
-}
-.pagination .pagination-list li a i{}
-.blog-grids.pagination{
-	margin-top:50px;
-	text-align:center;
-}
+
 
 /*--------------------------------------------------------------
 # Elements

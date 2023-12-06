@@ -9,6 +9,10 @@ import { fr } from 'date-fns/locale';
 
 function PageActu(){
    
+	const color = {
+		color:"#fff"
+
+	}
     const [actu, setactu] = useState([]);
 		
 		/*useEffect(() => {
@@ -49,48 +53,53 @@ function PageActu(){
 <div>
 <div>   
 
-<Breadcrumbs/>
-
-<section class="news-single section">
+<div class="breadcrumbs overlay">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-12">
-                <div class="row">
-                {actu ? (
-                    <div class="col-12">
-                        <div class="single-main" key={donnee.id}>
-                            <div class="news-head">
-                            <img src={"http://localhost:8000/storage/"+donnee.photosActualite}/>
-                            </div>
-                            <div class="meta">
-										<div class="meta-left">
-											<span class="date"><i class="fa fa-clock-o"></i>
-                                            {donnee.dateEvenement}
-                                            </span>
-										</div>
-							</div>
-                            <h1 class="news-title"><a>{donnee.titre}</a></h1>
-                            <div class="news-text">
-                                <p>{donnee.descriptionActualite}</p>
-                            <div class="blog-bottom">
-                                <ul class="social-share">
-                                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
-                                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
-                                    <li class="linkedin"><a href="#"><span>Linked </span><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        <div class="bread-inner" key={donnee.id}>
+            <div class="row">
+                <div class="col-12">
+                    <h3 style={color}>{donnee.titre}</h3>
+                    <ul class="bread-list">
+                    <li>Acceuil</li>
+                        <li><i class="icofont-simple-right"></i></li>
+                        <li class="active">Actualité</li>
+                    </ul>
                 </div>
-                ):(<p>Chargement...</p>)}
             </div>
-           
-            </div>
-
-
         </div>
     </div>
-</section>
+</div>
+
+
+<section class="portfolio-details section">
+			<div class="container">
+				<div class="row">
+                {actu ? (
+					<div class="col-12">
+						<div class="inner-content">
+							<div class="image-slider">
+								<div class="portfolio-details-slider">
+                <img src={"http://localhost:8000/storage/"+donnee.photosActualite}/>
+								</div>
+							</div>
+							<div class="body-text">
+								<h5>Le {donnee.dateEvenement}</h5>
+								<p>{donnee.descriptionActualite}</p>
+								<div class="share">
+									<h4>Partager maintenant-</h4>
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+                    ):(<p>Chargement...</p>)}
+				</div>
+			</div>
+		</section>
 
 </div>
 

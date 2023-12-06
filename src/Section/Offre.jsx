@@ -19,7 +19,6 @@ function Offre() {
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>Offre</h2>
-							<img src={offre}/>
 							<p>Domaines d'expertise de GéoAr'Tech</p>
 						</div>
 					</div>

@@ -12,8 +12,8 @@ import axios from 'axios';
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
       {
@@ -64,7 +64,7 @@ function Equipe() {
   }, []); // Le tableau vide comme deuxième argument signifie que useEffect s'exécute une seule fois après le montage
 
   return (
-    <section class="blog section" id='equipe'>
+    <section class="actualite section" id='equipe'>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -76,8 +76,9 @@ function Equipe() {
         </div>
         <div class="row">
         <div class="col-lg-12 col-md-6 col-12">
-       
-      <Slider {...settings}>
+        <Slider {...settings}>
+          
+
       {equipe.map(item => (
           <div className="card" key={item.id}>
             <div className="image">
@@ -85,11 +86,21 @@ function Equipe() {
             </div>
             <h5>{item.nom}  {item.prenoms}</h5>
                 <p>{item.poste}</p>
+
+         <div class="social-buttons">
+            <button class="social-button" onclick="window.location.href='https://www.facebook.com/'">
+              <i class="icofont-facebook"></i>
+            </button>
+            <button class="social-button" onclick="window.location.href='https://www.linkedin.com/'">
+              <i class="icofont-linkedin"></i>
+            </button>
+        </div>
           </div>
       ))}
       </Slider>
+     
     </div>
-
+    
         
       </div>
   </div>
@@ -99,3 +110,4 @@ function Equipe() {
 }
 
 export default Equipe
+

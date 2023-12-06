@@ -6,14 +6,33 @@ import { fr } from 'date-fns/locale';
 import { BrowserRouter as Router, Link, Route, Routes, useRoutes, useParams } from 'react-router-dom';
 import PageActu from '../pages/PageActu';
 import Breadcrumbs from '../components/breadcrumbs';
+import '../components/css/Pagination.css';
+import PaginationComponent from '../components/PaginationComponent';
 
 const color = {
     color: '#02b653', 
   };
 
+
 	function PageTouteActu() {
 		const [actu, setactu] = useState([]);
-	
+		const newsData = [
+			// Vos données d'actualités
+		  ];
+		
+		  const itemsPerPage = 6;
+		  const [currentPage, setCurrentPage] = useState(0);
+		
+		  const handlePageChange = ({ selected }) => {
+			setCurrentPage(selected);
+		  };
+		
+		  const pageCount = Math.ceil(newsData.length / itemsPerPage);
+		
+		  const paginatedNews = newsData.slice(
+			currentPage * itemsPerPage,
+			(currentPage + 1) * itemsPerPage
+		  );
 		//const { id } = useParams();
 
 		useEffect(() => {
@@ -41,7 +60,7 @@ const color = {
 
 <Breadcrumbs/>
 
-    <section class="blog section" id="actualite">
+    <section class="actualite section" id="actualite">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -67,9 +86,10 @@ const color = {
 				  </div>	
 		  </div>	
 			))}
-			  
+			   <PaginationComponent pageCount={pageCount} onPageChange={handlePageChange} />
 	  </div>
   </div>
+ 
 </section>
 
 </div>

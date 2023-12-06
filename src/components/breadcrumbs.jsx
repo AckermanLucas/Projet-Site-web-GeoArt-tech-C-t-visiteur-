@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter, NavLink } from 'react-router-dom';
 
 function breadcrumbs() {
   return (
@@ -9,7 +10,7 @@ function breadcrumbs() {
                 <div class="col-12">
                     <h2>Actualite</h2>
                     <ul class="bread-list">
-                        <li><a href="index.html">Acceuil</a></li>
+                    <li><NavLink to="/">Acceuil</NavLink></li>
                         <li><i class="icofont-simple-right"></i></li>
                         <li class="active">Actualité</li>
                     </ul>

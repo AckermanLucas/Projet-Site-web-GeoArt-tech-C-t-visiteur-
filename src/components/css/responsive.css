@@ -1,13 +1,7 @@
-/* =====================================
-Template Name: 	Mediplus.
-Author Name: Naimur Rahman
-Website: http://wpthemesgrid.com/
-Description: Mediplus - Doctor HTML Template.
-Version:	1.1
-========================================*/   
-/* Tablet Screen */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-/* Header Sticky */
+
+
+
 .section{
 	min-height: 100vh;
 	display: flex;
@@ -128,20 +122,7 @@ Version:	1.1
 .slider .single-slider {
 	height: 380px;
 }
-.schedule {
-	background: #fff;
-	margin: 0;
-	padding: 0;
-	height: auto;
-	padding: 70px 0;
-	border-bottom:1px solid #eee;
-}
-.schedule .schedule-inner {
-	transform: none;
-}
-.schedule .single-schedule.last{
-	margin-top:30px;
-}
+
 .slider .single-slider{
 	position:relative;
 }
@@ -190,7 +171,7 @@ Version:	1.1
 .fun-facts .single-fun {
 	margin: 20px 0;
 }
-.why-choose .choose-right {
+.qui-sommes-nous .choose-right {
 	height: 350px;
 	margin-top: 30px;
 }
@@ -214,11 +195,11 @@ Version:	1.1
 .appointment .appointment-image{
 	margin-top:20px;
 }
-.call-action .content {
+.voir-plus .content {
 	padding: 0;
 	padding: 70px 0;
 }
-.call-action .content h2 {
+.voir-plus .content h2 {
 	font-size: 28px;
 	line-height: 40px;
 }
@@ -277,12 +258,18 @@ Version:	1.1
 .appointment.single-page .work-hour {
 	margin-top: 30px;
 }
-.blog .single-news {
+.actualite .single-news {
 	margin: 15px 0;
 }
+.actualite .btn-actu {
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+}
+
 .news-single .single-main {
 	margin-top: 0;
 }
+
 .newsletter .subscribe-text {
 	text-align: center;
 	margin-bottom: 25px;
@@ -340,11 +327,11 @@ Version:	1.1
 .register .register-left {
 	height: 400px;
 }
-.pf-details .date ul li {
+.portfolio-details .date ul li {
 	margin-right: 25px;
 	font-size: 13px;
 }
-.pf-details .body-text h3 {
+.portfolio-details .body-text h3 {
 	font-size: 24px;
 	font-weight: 600;
 	color: #333;
@@ -399,14 +386,16 @@ Version:	1.1
 }
 .slicknav_menu{
 	display:block;
+	
 }
 .slicknav_menu {
 	display: block;
-	background: transparent;
+	background: white;
 	padding: 0;
+	
 }
 .slicknav_btn {
-	background: transparent;
+	background: white;
 	padding: 0;
 	margin-top: -30px;
 }
@@ -422,7 +411,7 @@ Version:	1.1
 	padding: 0;
 }
 .slicknav_btn {
-	background: transparent;
+	background: rgb(14, 107, 29);
 	padding: 0;
 	margin-top: 28px;
 }
@@ -431,7 +420,7 @@ Version:	1.1
 }
 .slicknav_nav {
 	clear: both;
-	color: #2C2D3F;
+	color: #fefeff;
 	margin: 0;
 	font-size: .875em;
 	background: transparent;
@@ -440,7 +429,9 @@ Version:	1.1
 	
 }
 .slicknav_nav li a {
-	color: #2C2D3F;
+	color:#02b653;
+	font-size: 12px;
+	font-weight: 600;
 	transition: all 0.4s ease;
 	background: none;
 	padding: 4px 10px;
@@ -454,7 +445,7 @@ Version:	1.1
 	margin:0;
 }
 .slicknav_nav li:hover a{
-	color:#02b653;
+	color: #2C2D3F; 
 }
 .slicknav_nav li .dropdown li a{
 	color:#2C2D3F;
@@ -666,15 +657,15 @@ Version:	1.1
 .fun-facts .single-fun .content {
 	padding:0;
 }
-.why-choose .choose-right {
+.qui-sommes-nous .choose-right {
 	height: 350px;
 	margin-top: 30px;
 }
-.call-action .content {
+.voir-plus .content {
 	padding: 0;
 	padding: 70px 0;
 }
-.call-action .content h2 {
+.voir-plus .content h2 {
 	font-size: 28px;
 	line-height: 40px;
 }
@@ -759,7 +750,7 @@ Version:	1.1
 .appointment.single-page .work-hour {
 	margin-top: 30px;
 }
-.blog .single-news {
+.actualite .single-news {
 	margin: 15px 0;
 }
 .news-single .single-main {
@@ -820,7 +811,7 @@ Version:	1.1
 	left: 0;
 	top: 0;
 }
-.news-single .blog-comments {
+.news-single .actualite-comments {
 	padding: 15px;
 }
 .news-single .comments-form {
@@ -975,27 +966,27 @@ Version:	1.1
 .contact-us .form {
 	margin-top: -25px;
 }
-.pf-details .date ul li {
+.portfolio-details .date ul li {
 	margin-right: 25px;
 	font-size: 13px;
 }
-.pf-details .date ul li {
+.portfolio-details .date ul li {
 	margin-right: 25px;
 	font-size: 13px;
 	display: block;
 	text-align: left;
 	margin-bottom: 8px;
 }
-.pf-details .date ul li:last-child{
+.portfolio-details .date ul li:last-child{
 	margin-bottom:0;
 }
-.pf-details .body-text h3 {
+.portfolio-details .body-text h3 {
 	font-size: 22px;
 	font-weight: 600;
 	color: #333;
 	margin-top: 30px;
 }
-.pf-details .image-slider .owl-nav {
+.portfolio-details .image-slider .owl-nav {
 	display: none;
 }
 .doctor-calendar-table table thead tr th {
@@ -1156,15 +1147,15 @@ Version:	1.1
 .fun-facts .single-fun .content {
 	padding:0;
 }
-.why-choose .choose-right {
+.qui-sommes-nous .choose-right {
 	height: 350px;
 	margin-top: 30px;
 }
-.call-action .content {
+.voir-plus .content {
 	padding: 0;
 	padding: 70px 0;
 }
-.call-action .content h2 {
+.voir-plus .content h2 {
 	font-size: 28px;
 	line-height: 40px;
 }
@@ -1229,7 +1220,7 @@ Version:	1.1
 .appointment.single-page .appointment-inner {
 	padding: 25px;
 }
-.blog .single-news {
+.actualite .single-news {
 	margin: 15px 0;
 }
 .newsletter .subscribe-text {
@@ -1301,10 +1292,5 @@ Version:	1.1
 .footer .footer-top {
 	padding: 65px 0px;
 }
-
-
-
-
-
-
 }
+

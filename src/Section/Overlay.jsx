@@ -2,7 +2,7 @@ import React from 'react'
 
 function Overlay() {
   return (
-<section class="call-action overlay" data-stellar-background-ratio="1.0">
+<section class="voir-plus overlay" data-stellar-background-ratio="1.0">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-12">

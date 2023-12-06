@@ -1,6 +1,6 @@
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 1.2em;
 	line-height: 1.3;
@@ -132,7 +132,7 @@ body{
 	position:relative;
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
 	cursor: pointer;
-	font-size: 1.2em;
+
 		
 }
 .header .navbar-collapse{
@@ -150,18 +150,19 @@ body{
 	z-index:999;
 	width:100%;
 }
-.get-quote{
-	margin-top:12px;
-}
-.get-quote .btn{
-	color:#fff;
-}
+
 .header .logo {
 	float: left;
 	width: 35%;
 	margin-top: 1px;
-
 }
+@media only screen and (max-width: 768px) {
+	.logo img {
+	  max-width: 45%;  /* Ajustez selon vos besoins */
+	}
+}
+
+
 .header .navbar {
 	background: none;
 	border: none;
@@ -170,7 +171,7 @@ body{
 	min-height: 0px;
 }
 .header .nav li{
-	margin-right: 15px;
+	margin-right: 10px;
     float: left;
 	position:relative;
 	
@@ -180,10 +181,10 @@ body{
 }
 .header .nav li a {
 	color: #02b653;
-	font-size: 14px;
-	font-weight: 650;
+	font-size: 15px;
+	font-weight: 600;
 	text-transform: capitalize;
-	padding: 25px 12px;
+	padding: 30px 12px;
 	position: relative;
 	display: inline-block;
 	position:relative;
@@ -320,13 +321,12 @@ body{
 	padding: 12px 15px;
 	color: #666;
 	display: block;
-	font-weight: 400;
 	text-transform: capitalize;
 	background: transparent;
 	-webkit-transition:all 0.2s ease;
 	-moz-transition:all 0.2s ease;
 	transition:all 0.2s ease;
-	font-weight: 650;
+	font-weight: 600;
 }
 .header .nav li .dropdown li a:before{
 	display:none;
@@ -543,150 +543,30 @@ body{
 =============================*/
 
 
-/*=============================
-	Start Feautes CSS
-===============================*/
-.Feautes{
-	padding-top:0;
-}
-.Feautes.index2{
-	padding-top:100px;
-}
-.Feautes.testimonial-page{
-	padding-top:100px;
-}
-.Feautes .single-features{
-	text-align:center;
-	position:relative;
-	padding:10px 20px;
-}
-.Feautes .single-features::before {
-	position: absolute;
-	content: "";
-	right: -72px;
-	top: 60px;
-	width: 118px;
-	border-bottom: 3px dotted #02b653;
-}
-.Feautes .single-features.last::before{
-	display:none;
-}
-.Feautes .single-features .signle-icon{
-	position:relative;
-}
-.Feautes .single-features .signle-icon i{
-	font-size:50px;
-	color:#02b653;
-	position:absolute;
-	left:50%;
-	margin-left:-50px;
-	top:0;
-	height:100px;
-	width:100px;
-	line-height:100px;
-	text-align:center;
-	border:1px solid #dddddd;
-	border-radius:100%;
-	-webkit-transition:all 0.4s ease;
-	-moz-transition:all 0.4s ease;
-	transition:all 0.4s ease;
-}
-.Feautes .single-features:hover .signle-icon i{
-	background:#02b653;
-	color:#fff;
-	border-color:transparent;
-}
-.Feautes .single-features h3{
-	padding-top: 128px;
-	color:#2C2D3F;
-	font-weight:600;
-	font-size:21px;
-}
-.Feautes .single-features p {
-	margin-top: 20px;
-}
-/*=============================
-	End Feautes CSS
-===============================*/
-
-/*=======================
-	Start Fun Facts CSS
-=========================*/
-.fun-facts{
-	position:relative;
-}
-.fun-facts.section{
-	padding:120px 0;
-}
-.fun-facts{
-	background:url('');
-	background-size:cover;
-	background-repeat:no-repeat;
-}
-.fun-facts .single-fun {
-	
-}
-.fun-facts .single-fun i {
-	position: absolute;
-	left: 0;
-	font-size: 62px;
-	color: #fff;
-	height: 70px;
-	width: 70px;
-	line-height: 67px;
-	font-size: 28px;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	border: 2px solid #fff;
-	border-radius: 0px;
-	top: 50%;
-	margin-top: -35px;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	border-radius: 50%;
-}
-.fun-facts .single-fun:hover i{
-	color:#02b653;
-	background:#fff;
-	border-color:transparent;
-}
-.fun-facts .single-fun .content {
-	padding-left: 80px;
-}
-.fun-facts .single-fun span {
-	color: #fff;
-	font-weight: 600;
-	font-size: 30px;
-	position: relative;
-	display: block;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s eas;
-	display: block;
-	margin-bottom: 7px;
-}
-.fun-facts .single-fun p{
-	color:#fff;
-	font-size:15px;
-}
 /*===================
-	End Fun Facts
+  Qui sommes nous ? CSS
 =====================*/
-
-/*===================
-	Why choose CSS
-=====================*/
-.why-choose .choose-left h3{
+/* Définir l'animation @keyframes */
+@keyframes fadeIn {
+	from {
+	  opacity: 0;
+	  transform: translateY(20px); /* Animation de déplacement vers le haut */
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+.qui-sommes-nous .choose-left h3{
 	font-size:24px;
-	font-weight:600;
+	font-weight:700;
 	color:#02b653;
 	position:relative;
 	padding-bottom:20px;
 	margin-bottom:24px;
 }
-.why-choose .choose-left h3:before{
+.qui-sommes-nous .choose-left h3:before{
 	position:absolute;
 	content:"";
 	left:0;
@@ -695,21 +575,21 @@ body{
 	width:50px;
 	background:#02b653;
 }
-.why-choose .choose-left p{
+.qui-sommes-nous .choose-left p{
 	margin-bottom:35px;
 }
-.why-choose .choose-left .list{
+.qui-sommes-nous .choose-left .list{
 	color: #02b653 ;
 
 }
-.why-choose .choose-left .list li {
+.qui-sommes-nous .choose-left .list li {
 	color: #868686;
 	margin-bottom: 12px;
 }
-.why-choose .choose-left .list li:last-child{
+.qui-sommes-nous .choose-left .list li:last-child{
 	margin-bottom:0px;
 }
-.why-choose .choose-left .list li i{
+.qui-sommes-nous .choose-left .list li i{
 	height:15px;
 	width:15px;
 	line-height:15px;
@@ -722,10 +602,10 @@ body{
 	margin-right:16px;
 }
 /* Start Faq CSS */
-.why-choose{
+.qui-sommes-nous{
 	background:#ffffff;
 }
-.why-choose .choose-right{
+.qui-sommes-nous .choose-right{
 	height:100%;
 	width:100%;
 
@@ -734,7 +614,7 @@ body{
 	background-repeat:no-repeat;
 	position:relative;
 }
-.why-choose .choose-right .video {
+.qui-sommes-nous .choose-right .video {
 	color: #fff;
 	height: 70px;
 	width: 70px;
@@ -750,10 +630,10 @@ body{
 	background: #00cc43;
 	padding-left: 4px;
 }
-.why-choose .choose-right .video:hover{
+.qui-sommes-nous .choose-right .video:hover{
 	transform:scale(1.1);
 }
-.why-choose .video-image .waves-block .waves {
+.qui-sommes-nous .video-image .waves-block .waves {
 	position: absolute;
 	width: 200px;
 	height: 200px;
@@ -768,15 +648,15 @@ body{
 	top: 50%;
 	margin-top: -100px;
 }
-.why-choose .video-image .waves-block .wave-1 {
+.qui-sommes-nous .video-image .waves-block .wave-1 {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
 }
-.why-choose .video-image .waves-block .wave-2 {
+.qui-sommes-nous .video-image .waves-block .wave-2 {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
-.why-choose .video-image .waves-block .wave-3 {
+.qui-sommes-nous .video-image .waves-block .wave-3 {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
@@ -788,61 +668,61 @@ body{
 /*===============================
 	Start Call to action CSS
 =================================*/
-.call-action{
+.voir-plus{
 	background-image: url('../images/fianara.jpg');
 	background-size:cover;
 	background-position:center;
 	position:relative;
 	background-repeat:no-repeat;
 }
-.call-action .content{
+.voir-plus .content{
 	text-align:center;
 	padding:100px 265px;
 }
-.call-action .content h2{
+.voir-plus .content h2{
 	color:#fff;
 	font-size:32px;
 	font-weight:600;
 	line-height:46px;
 }
-.call-action .content p {
+.voir-plus .content p {
 	color: #fff;
 	margin: 30px 0px;
 	font-size: 15px;
 }
-.call-action .content .btn{
+.voir-plus .content .btn{
 	background:#fff;
 	margin-right:20px;
 	font-weight:500;
 	border:1px solid #fff;
 	color:#2C2D3F;
 }
-.call-action .content .btn:before{
+.voir-plus .content .btn:before{
 	background:#2C2D3F;
 }
-.call-action .content .btn:hover{
+.voir-plus .content .btn:hover{
 	background:#2C2D3F;
 	color:#fff;
 	border:1px solid #fff;
 }
-.call-action .content .btn:last-child{
+.voir-plus .content .btn:last-child{
 	margin-right:0px;
 }
-.call-action .content .second {
+.voir-plus .content .second {
 	border: 1px solid #fff;
 	background: transparent;
 	color: #fff !important;
 }
-.call-action .content .second:before{
+.voir-plus .content .second:before{
 	background:#fff;
 	color:#2C2D3F;
 }
-.call-action .content .second:hover{
+.voir-plus .content .second:hover{
 	color:#2C2D3F;
 	border-color:transparent;
 	background:#fff;
 }
-.call-action .content .second i{
+.voir-plus .content .second i{
 	margin-left:10px;
 }
 /*===============================
@@ -859,17 +739,28 @@ body{
 	position:relative;
 }
 .portfolio .single-pf img{
-	height:100%;
-	width:100%;
+	width:500px;
+	height: 350px;
+  	object-fit: cover;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	overflow: hidden;
+	position: relative;
+	transition: transform 0.7s ease, filter 0.3s ease;
+	filter: brightness(1.0);
+	
 }
+
+
 .portfolio .single-pf:before{
 	position:absolute;
 	content:"";
 	left:0;
 	top:0;
-	height:100%;
-	width:100%;
-	background:#022713;
+	width:453px;
+	height: 350px;
+	background:#17241d;
 	opacity:0;
 	visibility:hidden;
 	-webkit-transition:all 0.4s ease;
@@ -916,14 +807,14 @@ body{
 	display:none;
 }
 /* Slider Nav */
-.pf-details .image-slider .owl-nav{
+.portfolio-details .image-slider .owl-nav{
 	margin: 0;
     position: absolute;
     top: 50%;
     width: 100%;
 	margin-top:-25px;
 }
-.pf-details .image-slider .owl-carousel .owl-nav div {
+.portfolio-details .image-slider .owl-carousel .owl-nav div {
 	height: 50px;
 	width: 50px;
 	line-height: 45px;
@@ -939,24 +830,24 @@ body{
 	transition: all 0.4s ease;
 	box-shadow: 0px 0px 10px #0000001a;
 }
-.pf-details .image-slider .owl-carousel .owl-nav div:hover{
+.portfolio-details .image-slider .owl-carousel .owl-nav div:hover{
 	color:#fff;
 	background:#00cc43;
 }
-.pf-details .image-slider .owl-carousel .owl-controls .owl-nav .owl-prev{
+.portfolio-details .image-slider .owl-carousel .owl-controls .owl-nav .owl-prev{
 	left:20px;
 }
-.pf-details .image-slider .owl-carousel .owl-controls .owl-nav .owl-next{
+.portfolio-details .image-slider .owl-carousel .owl-controls .owl-nav .owl-next{
 	right:20px;
 }
-.pf-details .image-slider{
+.portfolio-details .image-slider{
 	border-radius:8px 8px 0 0;
 }
-.pf-details .image-slider img{
+.portfolio-details .image-slider img{
 	height:100%;
 	width:100%;
 }
-.pf-details .date{
+.portfolio-details .date{
 	background: #00cc43;
 	display: block;
 	padding: 20px;
@@ -966,50 +857,50 @@ body{
 	margin: 0;
 	margin-top: -1px;
 }
-.pf-details .date ul li{
+.portfolio-details .date ul li{
 	font-size:16px;
 	color:#fff;
 	display:inline-block;
 	margin-right:60px;
 }
-.pf-details .date ul li:last-child{
+.portfolio-details .date ul li:last-child{
 	margin:0;
 }
-.pf-details .date ul li span{
+.portfolio-details .date ul li span{
 	font-weight:500;
 	display:inline-block;
 	margin-right:5px;
 }
-.pf-details .body-text{}
-.pf-details .body-text h3 {
+.portfolio-details .body-text{}
+.portfolio-details .body-text h3 {
 	font-size: 30px;
 	font-weight: 600;
 	color: #333;
 	margin-top: 40px;
 }
-.pf-details .body-text p{
+.portfolio-details .body-text p{
 	margin-top:20px;
 }
-.pf-details .body-text .share{
+.portfolio-details .body-text .share{
 	margin-top:40px;
 }
-.pf-details .body-text .share h4 {
+.portfolio-details .body-text .share h4 {
 	font-size: 15px;
 	font-weight: 500;
 	display: inline-block;
 }
-.pf-details .body-text .share ul{
+.portfolio-details .body-text .share ul{
 	display:inline-block;
 	margin-left:12px;
 }
-.pf-details .body-text .share ul li{
+.portfolio-details .body-text .share ul li{
 	display:inline-block;
 	margin-right:10px;
 }
-.pf-details .body-text .share ul li:last-child{
+.portfolio-details .body-text .share ul li:last-child{
 	margin-right:0;
 }
-.pf-details .body-text .share ul li a{
+.portfolio-details .body-text .share ul li a{
 	height:35px;
 	width:35px;
 	line-height:35px;
@@ -1019,7 +910,7 @@ body{
 	display:block;
 	border-radius:50%;
 }
-.pf-details .body-text .share ul li a:hover{
+.portfolio-details .body-text .share ul li a:hover{
 	color:#fff;
 	border-color:transparent;
 	background:#02b653;
@@ -1130,198 +1021,6 @@ body{
 	End service CSS
 ===========================*/
 
-/*=============================
-	Start Testimonials CSS
-===============================*/
-.testimonials{
-	background-image:url('');
-	background-size:cover;
-	background-position:center;
-	background-repeat:no-repeat;
-	position:relative;
-}
-.testimonials .section-title h2{
-	color:#fff;
-}
-.testimonials .single-testimonial {
-	text-align: left;
-	position: relative;
-	background: #fff;
-	padding: 40px 30px;
-	margin: 5px;
-	margin-bottom: 27px;
-	margin-right: 30px;
-	border-radius: 5px;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	margin: 0;
-	margin: 30px 20px;
-}
-.testimonials .single-testimonial:hover{
-	box-shadow: 0px 10px 10px #0000001c;
-	transform: translateY(-4px);
-}
-.testimonials .single-testimonial img {
-	position: absolute;
-	left: 30px;
-	bottom:-26px;
-	height: 53px;
-	width: 53px;
-	border-radius: 100%;
-}
-.testimonials .single-testimonial p{
-	color:#868686;
-	font-size:14px;
-}
-.testimonials .single-testimonial .name {
-	margin-top: 22px;
-	color: #2C2D3F;
-	font-weight: 500;
-	font-size: 15px;
-}
-
-.testimonials .owl-dots .owl-dot {
-	display: inline-block;
-	margin-right: 10px;
-}
-.testimonials .owl-dots .owl-dot:last-child{
-	margin:0px;
-}
-.testimonials .owl-dots .owl-dot span {
-	width: 10px;
-	height:10px;
-	display: block;
-	border-radius: 30px;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-	margin: 0;
-	background: #fff;
-	position: relative;
-}
-.testimonials .owl-dots .owl-dot span:hover{
-	background:#fff;
-}
-.testimonials .owl-dots .owl-dot.active span{
-	background:#fff;
-	width:20px;
-}
-/*=============================
-	End Testimonials CSS
-===============================*/
-
-/*==========================
-	Start Departments CSS
-============================*/
-.departments .department-tab .nav{
-	margin-bottom: 30px;
-    background:transform;
-	position:relative;
-}
-.departments .department-tab .nav li{
-	text-align:center;
-	margin-right:54px;
-}
-.departments .department-tab .nav li a i {
-	font-size: 50px;
-	color: #868686;
-}
-.departments .department-tab .nav li a:hover{
-	background:transparent;
-}
-.departments .department-tab .nav li a.active i{
-	color:#02b653;
-}
-.departments .department-tab .nav li a {
-	color: #fff;
-	margin-top: 20px;
-	border: none;
-	padding: 0;
-	padding-bottom: 20px;
-	border-bottom:2px solid transparent;
-	padding:0 10px 20px 10px;
-}
-.departments .department-tab .nav li a.active{
-	border-color:#02b653;
-}
-.departments .department-tab .nav li span{
-	display:block;
-}
-.departments .department-tab .nav li .first {
-	padding-top: 20px;
-	font-size: 20px;
-	font-weight: 500;
-	color: #868686;
-}
-.departments .department-tab .nav li a.active .first{
-	color:#2C2D3F;
-}
-.departments .department-tab .nav li .second {
-	font-size: 14px;
-	font-weight: 400;
-	color: #868686;
-	margin-top: 3px;
-}
-.departments .department-tab .tab-pane .department-left{}
-.departments .department-tab .tab-pane .department-left h3{
-	color:#2C2D3F;
-	font-weight:600;
-	font-size:26px;
-	position:relative;
-	padding-bottom:15px;
-	margin-bottom:30px;
-}
-.departments .department-tab .tab-pane .department-left h3:before{
-	position:absolute;
-	content:"";
-	left:0;
-	bottom:0;
-	height:3px;
-	width:50px;
-	background:#2C2D3F;
-}
-.departments .department-tab .tab-pane .department-left .p1 {
-	color: #02b653;
-	font-weight: 500;
-	margin-bottom: 18px;
-}
-.departments .department-tab .tab-pane .department-left p {
-	margin-bottom: 20px;
-}
-.departments .department-tab .tab-pane .department-left .list{}
-.departments .department-tab .tab-pane .department-left .list li{
-	position:relative;
-	padding-left: 30px;
-	margin-bottom:6px;
-}
-.departments .department-tab .tab-pane .department-left .list li:last-child{
-	margin-bottom:0px;
-}
-.departments .department-tab .tab-pane .department-left .list li i {
-	position: absolute;
-	left: 0;
-	height: 15px;
-	width: 15px;
-	line-height: 15px;
-	color: #fff;
-	background: #02b653;
-	text-align: center;
-	border-radius: 100%;
-	font-size: 8px;
-	margin-right: 20px;
-	top: 4px;
-}
-.departments .department-tab .tab-content .tab-text h2{
-	font-size:18px;
-}
-.departments .department-tab .tab-content .tab-text p{
-	color:#555;
-	margin-top:10px;
-}
-/*==========================
-	End Departments CSS
-============================*/
 
 /*=============================
 	Start Pricing Table CSS
@@ -1333,7 +1032,7 @@ body{
 	position:relative;
 }
 .pricing-table .single-table {
-	background: #fff;
+	background: #f9fffc;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
@@ -1407,20 +1106,7 @@ body{
 	border-radius: 100%;
 	padding-left: 1px;
 }
-/*
-.pricing-table{
-	background:#f9f9f9;
-	position:relative;
-}
-.pricing-table .single-table {
-	background: #fff;
-	border:1px solid #ddd;
-	text-align: center;
-	position: relative;
-	overflow: hidden;
-	margin: 15px 0;
-	padding:45px 35px 30px 35px;
-}
+
 /* Table Head */
 .pricing-table .single-table .table-head {
 	text-align:center;
@@ -1537,18 +1223,19 @@ body{
 	background-color: #ffffff;
 	background-size:cover;
 	background-position:center;
-	padding:100px 0px;
+	padding:20px 20px;
 	position:relative;
 }
 .clients .single-clients{
 	
 }
 .clients .single-clients img {
-	width: 70%;
+	width: 50px;
+	height: 120px;
 	cursor: pointer;
 	text-align: center;
 	float: none;
-	padding: 0 35px;
+	padding: 0 40px;
 	
 }
 /*========================
@@ -1668,159 +1355,22 @@ body{
 .team .t-bottom h2 a:hover{
 	color:#02b653;
 }
-/*-- Doctor Details --*/
-.doctor-details-left {
-	-webkit-box-shadow: 0px 0px 10px 0px #ddd;
-	box-shadow: 0px 0px 10px 0px #ddd;
-	border-radius: 10px;
-	overflow: hidden;
-}
-.doctor-details-item img {
-  width: 100%;
-  border-radius:0;
-}
-.doctor-details-item .doctor-details-contact {
-	padding: 50px;
-}
-.doctor-details-item .doctor-details-contact h3 {
-	font-weight: 600;
-	font-size: 20px;
-	color: #2C2D3F;
-	margin-bottom: 30px;
-}
-.doctor-details-item .doctor-details-contact .basic-info {
-  margin: 0;
-  padding: 0;
-}
-.doctor-details-item .doctor-details-contact .basic-info li {
-	list-style-type: none;
-	display: block;
-	font-weight: 400;
-	font-size: 15px;
-	color: #2C2D3F;
-	margin-bottom: 10px;
-}
-.doctor-details-item .doctor-details-contact .basic-info li:last-child {
-  margin-bottom: 0;
-}
-.doctor-details-item .doctor-details-contact .basic-info li i {
-	display: inline-block;
-	color: #02b653;
-	margin-right: 8px;
-	font-size: 16px;
-	position: relative;
-	top: 1px;
-}
-.doctor-details-area .doctor-details-left .social{
-	margin-top:25px;
-}
-.doctor-details-area .doctor-details-left .social li{
-	display:inline-block;
-	margin-right:10px;
-}
-.doctor-details-area .doctor-details-left .social li:last-child{
-	margin-right:0px;
-}
-.doctor-details-area .doctor-details-left .social li a {
-	height: 34px;
-	width: 34px;
-	line-height: 34px;
-	text-align: center;
-	border: 1px solid #C8C8C8;
-	text-align: center;
-	padding: 0;
-	border-radius: 4px;
-	display: block;
-	color: #757575;
-	font-size: 16px;
-}
-.doctor-details-area .doctor-details-left .social li a:hover{
-	color:#fff;
-	background:#02b653;
-	border-color:transparent;
-}
-.doctor-details-item .doctor-details-work h3 {
-	font-weight: 600;
-	font-size: 20px;
-	color: #2C2D3F;
-	margin-top: 30px;
-}
-.doctor-details-item .doctor-details-work .time-sidual{
-	
-}
-.doctor-details-item .doctor-details-work .time-sidual{
-	overflow:hidden;
-}
-.doctor-details-item .doctor-details-work .time-sidual li {
-	display: block;
-	color: #2C2D3F;
-	width: 100%;
-	margin-bottom: 10px;
-}
-.doctor-details-item .doctor-details-work .time-sidual li span{
-	display:inline-block;
-	float:right;
-}
-.doctor-details-item .doctor-details-work .day-head .time {
-	font-weight: 400;
-	float: right;
-}
 
-.doctor-details-area .doctor-details-right{
-	padding-left: 60px;
-	padding-top: 70px;
-}
-.doctor-details-item .doctor-details-biography {
- 
-}
-.doctor-details-item .doctor-details-biography h3 {
-  font-weight: 600;
-  font-size: 24px;
-  color: #2f60bd;
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-.doctor-details-item .doctor-details-biography p {
-  margin-bottom: 0;
-}
-.doctor-details-item .doctor-details-biography ul {
-  margin: 0;
-  padding: 0;
-}
-.doctor-details-item .doctor-details-biography ul li {
-  list-style-type: none;
-  display: block;
-  margin-bottom: 10px;
-}
-.doctor-details-item .doctor-details-biography ul li:last-child {
-  margin-bottom: 0;
-}
-.doctor-details-item .doctor-name .name{
-	font-size:30px;
-	font-weight:600;
-}
-.doctor-details-item .doctor-name .deg {
-	font-size: 22px;
-	margin: 10px 0 5px 0;
-}
-.doctor-details-item .doctor-name .degree{
-	font-size: 16px;
-}
 /*====================
 	End Team CSS
 ======================*/ 
 
 /*=======================
-	Start Blog CSS
+	Start Actualite CSS
 =========================*/
-.blog{
+.actualite{
 	background-color: #ffffff;
 
 }
-.blog .blog-title{
+.actualite .actualite-title{
 	text-align:center;
 }
-.blog .single-news {
+.actualite .single-news {
 	background: #fff;
 	position: relative;
 	-webkit-transition: all 0.4s ease;
@@ -1828,12 +1378,20 @@ body{
 	transition: all 0.4s ease;
 	box-shadow: 0px 0px 10px #00000014;
 	margin: 15px 0;
+	overflow: hidden; 
+    flex-direction: column;
+}
+.actualite .single-news {
+	height: 544px;
+	max-height: 544px;
+	min-height: 544px;
 
 }
-.blog .single-news img{
-	width:100%;
+
+.actualite .single-news img{
+	width:400px;
+	height: 280px;
 	margin:0;
-	height: 100%;
   	object-fit: cover;
 	padding:0;
 	-webkit-transition:all 0.4s ease;
@@ -1841,21 +1399,21 @@ body{
 	transition:all 0.4s ease;
 	overflow: hidden;
 	position: relative;
-	transition: transform 0.4s ease, filter 0.3s ease;
-	filter: brightness(0.7);
-}
-.blog .single-news img:hover{
-	transform: scale(1.2);
+	transition: transform 0.7s ease, filter 0.3s ease;
 	filter: brightness(1.0);
 }
-.blog .single-news .news-head{
+.actualite .single-news img:hover{
+	transform: scale(1.1);
+	filter: brightness(0.7);
+}
+.actualite .single-news .news-head{
 	position:relative;
 	overflow:hidden;
 	
 }
-.blog .single-news .news-content {
+.actualite .single-news .news-content {
 	text-align: left;
-	background: #fff;
+	background: #f9fffc;
 	z-index: 99;
 	position: relative;
 	padding: 30px;
@@ -1863,7 +1421,7 @@ body{
 	z-index: 0;
 	
 }
-.blog .single-news .news-content:before{
+.actualite .single-news .news-content:before{
 	position:absolute;
 	content:"";
 	left:0;
@@ -1877,23 +1435,27 @@ body{
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
 }
-.blog .single-news:hover .news-content:before{
-	opacity:1;
+.actualite .single-news:hover .news-content:before{
+	opacity:2;
+	margin-bottom: auto;
 	visibility:visible;
 	width:100%;
 }
-.blog .single-news .news-body h2 {
+.actualite .single-news .news-body h2 {
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 10px;
 	line-height: 24px;
+	max-height: 3.6em; /* Nombre approximatif de lignes * taille de la ligne */
+	overflow: hidden;
+
 }
-.blog .single-news .news-body h2 a{
+.actualite .single-news .news-body h2 a{
 	color:#2C2D3F;
 	font-weight: 500;
 }
 
-.blog .single-news .news-content p {
+.actualite .single-news .news-content p {
 	font-weight: 400;
 	text-transform: capitalize;
 	font-size: 13px;
@@ -1903,18 +1465,17 @@ body{
  	overflow: hidden;
   	text-overflow: ellipsis;
 }
-.blog .single-news .news-body .date {
+.actualite .single-news .news-body .date {
 	display: inline-block;
 	font-size: 14px;
-	margin-bottom: 5px;
 	background: #02b653;
 	color: #fff;
 	padding: 4px 15px;
 	border-radius: 3px;
 	font-size: 14px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
-.blog .btn{
+.actualite .btn{
 	display: inline-block;
 	padding: 8px 16px;
 	background-color: #333;
@@ -1923,36 +1484,46 @@ body{
 	margin-top: 16px;
 	color: #fff;
 }	
-.blog .btn:before{
+.actualite .btn:before{
 	color: #fff;
 	background: #02b653;
 }
-.blog .btn-actu{
+.actualite .btn-actu{
 	display: inline-block;
-	padding: 8px 16px;
+	padding: 12px 18px;
 	background-color: #02b653;
 	text-decoration: none;
-	border-radius: 4px;
 	margin-top: 30px;
 	color: #fff;
 	position: relative;
-	margin-left: 450px;
+	margin-left: 470px;
 	border-radius: 30px;
 }
 
-.blog .btn-actu:before{
+.actualite .btn-actu:before{
 	color: #fff;
 	background: #333;
 }
-.blog .btn-actu:hover{
+.actualite .btn-actu:hover{
 	color: #fff;
 	background: #333;
+	-moz-animation-delay: 0.8s;
+}
+@media only screen and (max-width: 768px) {
+	.actualite .btn-actu {
+		padding: 11px 20px;
+		font-weight: 400;
+		font-size: 13px;
+		margin: 50px;
+		margin-bottom: 10px;
+		margin-left: 80px;
+	}
 }
 
-.blog.grid .single-news{
+.actualite.grid .single-news{
 	margin-top:30px;
 }
-/* Blog Sidebar */
+/* actualite Sidebar */
 .main-sidebar {
 	background: #fff;
 	margin-top: 30px;
@@ -2117,7 +1688,7 @@ body{
 	display:inline-block;
 	margin-right:5px;
 }
-/* Blog Tags */
+/* actualite Tags */
 .main-sidebar .side-tags .tag{
 	margin-top:40px;
 }
@@ -2148,6 +1719,7 @@ body{
 }
 .news-single .single-main {
 	margin-top: 30px;
+	left: 10px;
 	background: #fff;
 	padding: 30px;
 	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
@@ -2159,6 +1731,7 @@ body{
 .news-single .news-head img{
 	width:100%;
 	height:100%;
+
 }
 .news-single .news-title {
 	font-size: 25px;
@@ -2171,7 +1744,7 @@ body{
 .news-single .news-title a:hover {
 	color: #02b653;
 }
-/* Blog Meta */
+/* actualite Meta */
 .news-single{
 	background:#fff;
 }
@@ -2261,7 +1834,7 @@ body{
 	font-size: 15px;
 	position: relative;
 }
-.news-single .blog-bottom {
+.news-single .actualite-bottom {
 	overflow: hidden;
 }
 /* Social Share */
@@ -2325,8 +1898,8 @@ body{
 	background:#02b653;
 	border-color:transparent;
 }
-/* Blog Comments */
-.news-single .blog-comments {
+/* actualite Comments */
+.news-single .actualite-comments {
 	margin-top: 30px;
 	background: transparent;
 	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
@@ -2335,14 +1908,14 @@ body{
 	border-radius: 8px;
 	padding: 30px;
 }
-.news-single .blog-comments h2 {
+.news-single .actualite-comments h2 {
 	text-align: left;
 	text-transform: capitalize;
 	font-size: 18px;
 	color: #252525;
 	margin-bottom: 20px;
 }
-.news-single .blog-comments h4 span{
+.news-single .actualite-comments h4 span{
 	float:right;
 }
 .news-single .single-comments {
@@ -2581,7 +2154,7 @@ body{
 	transition:all 0.3s ease 0s;
 }
 /*===================
-	End Blog CSS
+	End actualite CSS
 =====================*/
 
 /*==========================
@@ -3844,7 +3417,7 @@ body{
 	position:relative;
 }
 .footer .footer-top{
-	padding:100px 0px;
+	padding:80px 0px;
 	position:relative;
 	background:#07011a;
 }
