@@ -131,9 +131,7 @@ body{
 	background-color:#fff;
 	position:relative;
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
-	cursor: pointer;
-
-		
+	cursor: pointer;		
 }
 .header .navbar-collapse{
 	padding:0;
@@ -158,10 +156,9 @@ body{
 }
 @media only screen and (max-width: 768px) {
 	.logo img {
-	  max-width: 45%;  /* Ajustez selon vos besoins */
+	  max-width: 55%;  /* Ajustez selon vos besoins */
 	}
 }
-
 
 .header .navbar {
 	background: none;
@@ -188,7 +185,6 @@ body{
 	position: relative;
 	display: inline-block;
 	position:relative;
-	
 }
 .header .nav li a::before {
 	position: absolute;
@@ -580,7 +576,6 @@ body{
 }
 .qui-sommes-nous .choose-left .list{
 	color: #02b653 ;
-
 }
 .qui-sommes-nous .choose-left .list li {
 	color: #868686;
@@ -747,19 +742,18 @@ body{
 	transition:all 0.4s ease;
 	overflow: hidden;
 	position: relative;
-	transition: transform 0.7s ease, filter 0.3s ease;
-	filter: brightness(1.0);
-	
+	transition: transform 0.7s ease, filter 0.3s ease;	
 }
-
+.portfolio .single-pf img:hover{
+	filter: brightness(0.5);
+}
 
 .portfolio .single-pf:before{
 	position:absolute;
 	content:"";
 	left:0;
 	top:0;
-	width:453px;
-	height: 350px;
+	filter: brightness(0,7);
 	background:#17241d;
 	opacity:0;
 	visibility:hidden;
@@ -926,8 +920,6 @@ body{
 	margin:30px 0;
 	position:relative;
 	padding-left:70px;
-
-	
 }
 .services .single-service i{
 	font-size:45px;
@@ -1038,7 +1030,7 @@ body{
 	overflow: hidden;
 	margin: 15px 0;
 	padding:15px 25px 25px 35px;
-	height: 300px;
+	height: 430px;
 	border-radius:10px;
 	opacity: 100%;
 	box-shadow: 0px 0px 10px #00000014;
@@ -1238,13 +1230,11 @@ body{
 	padding: 0 40px;
 	
 }
-/*========================
-	End Clients CSS
-==========================*/
-
-/*====================
-	Start Team CSS
-======================*/ 
+@media only screen and (max-width: 768px) {
+	.clients .single-clients {
+		width: 100%;
+	}
+  }
 .team{
 	background-image:url('');
 	background-size:cover;
@@ -1516,7 +1506,7 @@ body{
 		font-size: 13px;
 		margin: 50px;
 		margin-bottom: 10px;
-		margin-left: 80px;
+		margin-left: 120px;
 	}
 }
 

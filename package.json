@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
     "axios": "^1.6.1",
     "date-fns": "^2.30.0",
     "font-awesome": "^4.7.0",
@@ -18,6 +19,7 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
+    "react-spinners": "^0.13.8",
     "slick-carousel": "^1.8.1",
     "slicknav": "^1.0.8",
     "web-vitals": "^2.1.4"

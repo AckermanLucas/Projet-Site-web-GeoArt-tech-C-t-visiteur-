@@ -14,21 +14,7 @@ function PageActu(){
 
 	}
     const [actu, setactu] = useState([]);
-		
-		/*useEffect(() => {
-		  // Fonction pour charger les données depuis le backend Laravel
-		  const fetchData = async () => {
-			try {
-			  const response = await axios.get('http://localhost:8000/api/afficherActualite/${id}'); // Remplacez 'URL_DU_BACKEND' par l'URL réelle de votre backend
-			  setactu(response.data);
-		
-			} catch (error) {
-			  console.error('Erreur lors du chargement des données:', error);
-			}
-		  };
-		  // Appel de la fonction pour charger les données au montage du composant
-		  fetchData();
-		}, [id]); // Le tableau vide comme deuxième argument signifie que useEffect s'exécute une seule fois après le montage*/
+
 
         let {id}=useParams();
   
@@ -46,12 +32,14 @@ function PageActu(){
       });
   }, [id])
 
+
   const sortedActu = actu.sort((a, b) => new Date(a.dateEvenement) - new Date(b.dateEvenement));
 		const reverseactu = sortedActu.reverse();
 
   return (
+	
 <div>
-<div>   
+<div>  
 
 <div class="breadcrumbs overlay">
     <div class="container">
@@ -74,7 +62,8 @@ function PageActu(){
 <section class="portfolio-details section">
 			<div class="container">
 				<div class="row">
-                {actu ? (
+                {actu ? 
+				(
 					<div class="col-12">
 						<div class="inner-content">
 							<div class="image-slider">

@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './components/Style.css';
 import './components/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/css/animate.min.css';
+import './components/css/offre.css';
 import './components/css/magnific-popup.css';
 import './components/css/nice-select.css';
 import './components/css/normalize.css';
@@ -21,6 +23,13 @@ import './components/css/slicknav.min.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+// Importez le fichier JavaScript de SlickNav
+//import 'slicknav/dist/jquery.slicknav.min.js';
+
+// Assurez-vous d'avoir jQuery installé
+import $ from 'jquery';
+
+// ...
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

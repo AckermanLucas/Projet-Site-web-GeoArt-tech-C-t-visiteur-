@@ -11,21 +11,22 @@ function Actualite() {
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2 style={color}>Présentation</h2>
+					
+							<h2 style={color}>Qui sommes nous?</h2>
+					
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-6 col-12">
+					<div class="col-lg-12 col-12">
 				
 						<div class="choose-left">
-							<h3>Qui sommes nous?</h3>
-							<p>Bienvenue chez Géoart'tech, une entreprise dynamique fusionnant expertise informatique, géospatial et science des données. Chez Géoart'tech, nous sommes des passionnés de la convergence entre la technologie de pointe et la cartographie, créant ainsi des solutions novatrices pour répondre aux défis complexes du monde moderne.</p>
-							<p>Notre approche centrée sur l'innovation nous permet de concevoir des applications informatiques de pointe, des outils de cartographie précis et des modèles analytiques robustes. Nous mettons notre expertise au service de divers secteurs, de l'urbanisme à l'agriculture en passant par la gestion des ressources naturelles. </p>
-							<p>Chez Géoart'tech, nous croyons en la puissance des données pour façonner un avenir meilleur. Nous nous engageons à fournir des solutions technologiques de qualité, à repousser les frontières de la cartographie et à offrir des outils précis et performants pour transformer les défis en opportunités. </p>
-							<p>Rejoignez-nous dans cette aventure où la technologie rencontre la géospatialité, et ensemble, construisons un monde plus connecté, intelligent et durable.</p>
-							<p> </p>
-							<p> </p>
+							<p>Bienvenue chez " GéoAr'tech" ! Nous sommes une entreprise de pointe dans le domaine de la géo-innovation, pionniers de la transformation des données spatiales en solutions pratiques pour un monde en constante évolution. </p>
+							<p>Chez GéoAr'tech, nous croyons fermement que la géospatialisation est la clé pour relever les défis complexes auxquels notre planète est confrontée.  </p>
+							<p>Notre équipe de géo-innovateurs passionnés, composée de géographes, de scientifiques des données et d'experts en technologie géospatiale, s'engage à développer des produits et des services de pointe qui révolutionnent la manière dont nous comprenons et interagissons avec le monde qui nous entoure. </p>
+							<p>Notre vision est de créer un avenir où la géo-innovation est au cœur de chaque décision, où la localisation et la spatialisation guident notre compréhension du monde. </p>
+							<p>Joignez-vous à nous chez GéoAr'tech pour être partie prenante de cette révolution géospatiale qui changera la donne.</p>
+							
 							
 						</div>
 					

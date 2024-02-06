@@ -11,6 +11,7 @@ import Equipe from '../Section/Equipe';
 import Contacter from '../Section/Contacter';
 import Portfolio from '../Section/Portfolio';
 
+
 const Acceuil = () => {
 
   const { sectionId } = useParams();
@@ -23,10 +24,11 @@ const Acceuil = () => {
       }
     }
   }, []);
-  
+
 
   return (
     <div>
+
         <Slider />
         <Actual />
         <Pres />
@@ -34,9 +36,7 @@ const Acceuil = () => {
         <Portfolio />
         <Equipe />
         <Overlay />
-        <Partenaires />
         <News />
-  
   </div>
 
 

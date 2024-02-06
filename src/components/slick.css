@@ -74,7 +74,6 @@
   object-fit: cover;
   border-radius: 50%;
 }
-
 .card-bottom {
   margin: 10px 20px;
 }
@@ -95,9 +94,9 @@
     border-radius: 0; /* Supprimez la bordure arrondie pour les écrans plus petits si nécessaire */
     margin: 15px 0;
   }
-
-
-
+  .card .image {
+    margin-left: 60px;
+  }
 }
 
 .card .social-buttons {

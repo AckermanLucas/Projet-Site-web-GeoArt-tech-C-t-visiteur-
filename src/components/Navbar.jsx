@@ -4,6 +4,7 @@ import { scroller } from 'react-scroll' ;
 import { BrowserRouter, NavLink } from 'react-router-dom';
 //import MyRouter from './router/index.js';
 
+
 const sections = document.querySelectorAll('div[id^="section"]');
 const navLinks = document.querySelectorAll('header nav');
 
@@ -38,7 +39,7 @@ function activateNavLink(sectionId) {
 }
 
 function Navbar() {
-
+  
 
   const handleClick = (to) => {
     
@@ -62,12 +63,14 @@ function Navbar() {
                   <div class="logo">
                     <a href=""><img src={geo}/></a>
                   </div> 
-                  <div class="mobile-nav"></div>
-                </div>
-                <div class="col-lg-14 col-md-9 col-12">
-          
-                  <div class="main-menu">
-                    <nav class="navigation">
+               
+								<div class="mobile-nav"></div>
+				
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+				
+								<div class="main-menu">
+									<nav class="navigation">
                       <ul class="nav menu">
               
                         <li>
