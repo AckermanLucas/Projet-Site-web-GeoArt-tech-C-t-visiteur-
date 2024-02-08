@@ -1182,9 +1182,6 @@ body{
 
 
 
-
-
-*/
 /* Table Bottom */
 .pricing-table .table-bottom {
 	margin-top: 25px;
@@ -1218,9 +1215,7 @@ body{
 	padding:20px 20px;
 	position:relative;
 }
-.clients .single-clients{
-	
-}
+
 .clients .single-clients img {
 	width: 50px;
 	height: 120px;
